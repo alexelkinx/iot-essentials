@@ -1,0 +1,5 @@
+What was the pulse high state voltage you measured?
+The measured pulse high state voltage is 3.250 V.
+
+What is the frequency of the output pulses?
+The output pulse frequency is 5000 Hz (5 kHz).
