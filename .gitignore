@@ -1,0 +1,30 @@
+build/
+sdkconfig.defaults*
+sdkconfig.old
+.vscode/
+managed_components/
+pytest*
+dependencies*
+esp_idf_*
+.devcontainer/
+
+# Build files
+build/
+sdkconfig*
+managed_components/
+dependencies*/
+esp_idf_*/
+
+# IDE settings
+.vscode/
+.devcontainer/
+
+# Python cache & tests
+pytest*
+__pycache__/
+*.py[cod]
+*.pytest_cache/
+
+# Misc
+.DS_Store
+Thumbs.db
