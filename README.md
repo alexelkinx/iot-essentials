@@ -7,10 +7,12 @@ This repository contains the projects and solutions for the **IoT Essentials Lab
 The course includes several labs that involve the development of:
 
 1. A **Blink Example** to demonstrate basic GPIO handling by blinking an LED.
+2. A **Traffic Light System** that simulates traffic light operations with various states and timing sequences.
 
 ## Table of Contents
 
 - [Lab 1: Blink Example](#lab-1-blink-example)
+- [Lab 2: Traffic Light System](#lab-2-traffic-light-system)
 - [Building the Projects](#building-the-projects)
 
 ## Lab 1: Blink Example
@@ -25,6 +27,22 @@ In **Lab 1**, I developed a simple **Blink Example** application using the ESP-I
 - Built with **CMake** for managing the build process
 
 **[See Lab 1 Details](lab_1/README.md)**
+
+---
+
+## Lab 2: Traffic Light System
+
+### Project Overview
+
+In **Lab 2**, I created a **Traffic Light System** that manages the states of a traffic light, including **RED**, **YELLOW**, **GREEN**, and special periods like **BLINKING YELLOW** during the night. The system uses a state machine to handle the transitions and timing sequences.
+
+### Key Features:
+
+- Simulates **traffic light state transitions**
+- Handles **day and night periods** with different behaviors
+- Built with **CMake** for managing the build process
+
+**[See Lab 2 Details](lab_2/README.md)**
 
 ---
 
@@ -55,6 +73,13 @@ In **Lab 1**, I developed a simple **Blink Example** application using the ESP-I
 
    ```sh
    cd lab_1/blink
+   idf.py build
+   ```
+
+4. Build the traffic light system:
+
+   ```sh
+   cd lab_2/traffic-light-system
    idf.py build
    ```
 
