@@ -8,11 +8,13 @@ The course includes several labs that involve the development of:
 
 1. A **Blink Example** to demonstrate basic GPIO handling by blinking an LED.
 2. A **Traffic Light System** that simulates traffic light operations with various states and timing sequences.
+3. A **FreeRTOS Multitasking Example** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies.
 
 ## Table of Contents
 
 - [Lab 1: Blink Example](#lab-1-blink-example)
 - [Lab 2: Traffic Light System](#lab-2-traffic-light-system)
+- [Lab 3: FreeRTOS Multitasking Example](#lab-3-freertos-multitasking-example)
 - [Building the Projects](#building-the-projects)
 
 ## Lab 1: Blink Example
@@ -43,6 +45,22 @@ In **Lab 2**, I created a **Traffic Light System** that manages the states of a 
 - Built with **CMake** for managing the build process
 
 **[See Lab 2 Details](lab_2/README.md)**
+
+---
+
+## Lab 3: FreeRTOS Multitasking Example
+
+### Project Overview
+
+In **Lab 3**, I developed a **FreeRTOS Multitasking Example** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies. This lab covers the creation and management of multiple tasks in FreeRTOS.
+
+### Key Features:
+
+- Blinks three LEDs at different frequencies using FreeRTOS tasks
+- Demonstrates multitasking and task scheduling in FreeRTOS
+- Built with **CMake** for managing the build process
+
+**[See Lab 3 Details](lab_3/README.md)**
 
 ---
 
@@ -80,6 +98,13 @@ In **Lab 2**, I created a **Traffic Light System** that manages the states of a 
 
    ```sh
    cd lab_2/traffic-light-system
+   idf.py build
+   ```
+
+5. Build the FreeRTOS multitasking example:
+
+   ```sh
+   cd lab_3/freertos_blink
    idf.py build
    ```
 
