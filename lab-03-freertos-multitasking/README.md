@@ -12,14 +12,14 @@ In **Lab 3**, I developed a **FreeRTOS Multitasking Example** that demonstrates 
 
 ## Task Description
 
-The task description can be found in the [task_description.md](task_description.md) file.
+The task description can be found in the [task-description.md](task-description.md) file.
 
 ## Solution
 
-The solution files are located in the `freertos_blink` directory.
+The solution files are located in the `freertos-blink` directory.
 
-- `freertos_blink/main.c`: Contains the main application code.
-- `freertos_blink/CMakeLists.txt`: CMake configuration for the FreeRTOS multitasking example.
+- `freertos-blink/main.c`: Contains the main application code.
+- `freertos-blink/CMakeLists.txt`: CMake configuration for the FreeRTOS multitasking example.
 
 ## How to Build and Run
 

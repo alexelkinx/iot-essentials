@@ -4,7 +4,7 @@ This lab demonstrates a simple example of blinking an LED using the ESP-IDF fram
 
 ## Task Description
 
-The task description can be found in the [task_description.md](task_description.md) file.
+The task description can be found in the [task-description.md](task-description.md) file.
 
 ## Solution
 

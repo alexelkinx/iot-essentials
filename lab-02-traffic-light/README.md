@@ -4,7 +4,7 @@ This lab involves creating a traffic light system using GPIOs and a state machin
 
 ## Task Description
 
-The task description can be found in the [task_description.md](task_description.md) file.
+The task description can be found in the [task-description.md](task-description.md) file.
 
 ## Solution
 
