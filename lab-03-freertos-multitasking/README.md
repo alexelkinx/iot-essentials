@@ -16,10 +16,10 @@ The task description can be found in the [task-description.md](task-description.
 
 ## Solution
 
-The solution files are located in the `freertos-blink` directory.
+The solution files are located in the `freertos_blink` directory.
 
-- `freertos-blink/main.c`: Contains the main application code.
-- `freertos-blink/CMakeLists.txt`: CMake configuration for the FreeRTOS multitasking example.
+- `freertos_blink/main.c`: Contains the main application code.
+- `freertos_blink/CMakeLists.txt`: CMake configuration for the FreeRTOS multitasking example.
 
 ## How to Build and Run
 

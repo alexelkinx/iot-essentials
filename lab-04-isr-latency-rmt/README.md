@@ -20,7 +20,7 @@ The task description can be found in the [task-description.md](task-description.
 
 The solution consists of two main components located in separate directories:
 
-### `generic-gpio` directory:
+### `generic_gpio` directory:
 
 - `main/app_main.c`: Main code for GPIO input, ISR, and task-level latency measurement.
 - `main/CMakeLists.txt`: CMake configuration for the GPIO-based application.
@@ -40,10 +40,10 @@ The solution consists of two main components located in separate directories:
    . $HOME/esp/esp-idf/export.sh
    ```
 
-2. Build and flash the `generic-gpio` application:
+2. Build and flash the `generic_gpio` application:
 
    ```sh
-   cd generic-gpio
+   cd generic_gpio
    idf.py build
    idf.py flash
    idf.py monitor

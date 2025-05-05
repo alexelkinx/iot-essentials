@@ -8,13 +8,13 @@ The task description can be found in the [task-description.md](task-description.
 
 ## Solution
 
-The solution files are located in the `traffic-light-system` directory.
+The solution files are located in the `traffic_light_system` directory.
 
-- `traffic-light-system/main/app_main.c`: Main application code that initializes the lights and runs the traffic light logic.
-- `traffic-light-system/main/gpio_lights.c`: Contains functions to initialize and set the GPIO states for the traffic lights.
-- `traffic-light-system/main/gpio_lights.h`: Header file for GPIO light functions.
-- `traffic-light-system/main/traffic_light_logic.c`: Contains the core logic for the traffic light state machine.
-- `traffic-light-system/main/traffic_light_logic.h`: Header file for the traffic light logic functions and enum definitions.
+- `traffic_light_system/main/app_main.c`: Main application code that initializes the lights and runs the traffic light logic.
+- `traffic_light_system/main/gpio_lights.c`: Contains functions to initialize and set the GPIO states for the traffic lights.
+- `traffic_light_system/main/gpio_lights.h`: Header file for GPIO light functions.
+- `traffic_light_system/main/traffic_light_logic.c`: Contains the core logic for the traffic light state machine.
+- `traffic_light_system/main/traffic_light_logic.h`: Header file for the traffic light logic functions and enum definitions.
 
 ## How to Build and Run
 
@@ -27,7 +27,7 @@ The solution files are located in the `traffic-light-system` directory.
 2. Build the project:
 
    ```sh
-   cd traffic-light-system
+   cd traffic_light_system
    idf.py build
    ```
 

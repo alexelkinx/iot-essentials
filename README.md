@@ -1,14 +1,15 @@
-# IoT Essentials Labs
+# IoT Essentials
 
 ## Overview
 
-This repository contains the projects and solutions for the **IoT Essentials Labs** course, which covers various aspects of hardware and software integration, including GPIO handling, traffic light systems, and using oscilloscopes. The course focuses on programming with the ESP-IDF framework, and each lab is designed to strengthen the understanding of fundamental concepts such as GPIO control, state machines, and hardware interaction.
+This repository contains the projects and solutions for the **IoT Essentials** course, which covers key aspects of hardware and software integration, including GPIO control, traffic light systems, and the use of oscilloscopes. The course focuses on programming with the ESP-IDF framework, and each lab is designed to deepen the understanding of fundamental concepts such as state machines and hardware interaction.
 
 The course includes several labs that involve the development of:
 
 1. A **Blink + Hardware Tools** to demonstrate basic GPIO handling by blinking an LED.
 2. A **Traffic Light System** that simulates traffic light operations with various states and timing sequences.
-3. A **FreeRTOS Multitasking** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies.
+3. A **FreeRTOS Multitasking project** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies.
+4. An **ISR Latency and RMT Interrupts lab** that measures GPIO interrupt latency and explores task responsiveness using synchronous and asynchronous interrupt triggering with the RMT peripheral.
 
 ## Table of Contents
 
@@ -22,7 +23,7 @@ The course includes several labs that involve the development of:
 
 ### Project Overview
 
-In **Lab 1**, I developed a simple **Blink Example** application using the ESP-IDF framework to blink an LED connected to a GPIO pin. This lab serves as an introduction to GPIO handling and the ESP-IDF build system.
+In **Lab 1**, I developed a simple **Blink application** using the ESP-IDF framework to blink an LED connected to a GPIO pin. This lab serves as an introduction to GPIO handling and the ESP-IDF build system.
 
 ### Key Features:
 
@@ -53,7 +54,7 @@ In **Lab 2**, I created a **Traffic Light System** that manages the states of a 
 
 ### Project Overview
 
-In **Lab 3**, I developed a **FreeRTOS Multitasking Example** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies. This lab covers the creation and management of multiple tasks in FreeRTOS.
+In **Lab 3**, I developed a **FreeRTOS Multitasking application** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies. This lab covers the creation and management of multiple tasks in FreeRTOS.
 
 ### Key Features:
 
