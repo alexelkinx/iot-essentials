@@ -92,62 +92,10 @@ In **Lab 4**, I explored GPIO interrupt latency and task-level responsiveness us
 - CMake
 - A compatible ESP32 development board
 
-### Building the Projects
+### Building and Running Individual Labs
 
-1. Clone the repository:
-
-   ```sh
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
-
-2. Set up the ESP-IDF environment:
-
-   ```sh
-   . $HOME/esp/esp-idf/export.sh
-   ```
-
-3. Build the blink example:
-
-   ```sh
-   cd lab-01-blink-hw-tools
-   idf.py build
-   ```
-
-4. Build the traffic light system:
-
-   ```sh
-   cd lab-02-traffic-light
-   idf.py build
-   ```
-
-5. Build the FreeRTOS multitasking example:
-
-   ```sh
-   cd lab-03-freertos-multitasking
-   idf.py build
-   ```
-
-6. Build the ISR latency and RMT interrupt example:
-
-   ```sh
-   cd lab-04-isr-latency-rmt
-   idf.py build
-   ```
-
-### Flashing and Monitoring
-
-1. Flash the firmware to the ESP32 board:
-
-   ```sh
-   idf.py flash
-   ```
-
-2. Monitor the serial output:
-
-   ```sh
-   idf.py monitor
-   ```
+Each lab folder contains its own `README.md` file with instructions for building, flashing, and monitoring.  
+Please refer to those files for lab-specific steps using the ESP-IDF toolchain.
 
 ---
 
