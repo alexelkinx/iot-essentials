@@ -12,7 +12,7 @@ On ESP32-C6 you have 4 hardware breakpoints available, which might limit your de
 
 ## Assignment
 
-Create multitasked program where 3 independent tasks each blinks its own LED. For project base use blink example. For creating new tasks, see generic_gpio example and [FreeRTOS documentation]([xTaskCreate - FreeRTOS™](https://www.freertos.org/Documentation/02-Kernel/04-API-references/01-Task-creation/01-xTaskCreate))
+Create multitasked program where 3 independent tasks each blinks its own LED. For project base use blink example. For creating new tasks, see generic_gpio example and [FreeRTOS documentation: xTaskCreate](https://www.freertos.org/Documentation/02-Kernel/04-API-references/01-Task-creation/01-xTaskCreate)
 
 - red LED: 3Hz
 - yellow LED: 7Hz

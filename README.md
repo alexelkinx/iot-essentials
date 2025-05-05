@@ -6,18 +6,18 @@ This repository contains the projects and solutions for the **IoT Essentials Lab
 
 The course includes several labs that involve the development of:
 
-1. A **Blink Example** to demonstrate basic GPIO handling by blinking an LED.
+1. A **Blink + Hardware Tools** to demonstrate basic GPIO handling by blinking an LED.
 2. A **Traffic Light System** that simulates traffic light operations with various states and timing sequences.
-3. A **FreeRTOS Multitasking Example** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies.
+3. A **FreeRTOS Multitasking** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies.
 
 ## Table of Contents
 
-- [Lab 1: Blink Example](#lab-1-blink-example)
+- [Lab 1: Blink + Hardware Tools](#lab-1-blink--hardware-tools)
 - [Lab 2: Traffic Light System](#lab-2-traffic-light-system)
-- [Lab 3: FreeRTOS Multitasking Example](#lab-3-freertos-multitasking-example)
+- [Lab 3: FreeRTOS Multitasking](#lab-3-freertos-multitasking)
 - [Building the Projects](#building-the-projects)
 
-## Lab 1: Blink Example
+## Lab 1: Blink + Hardware Tools
 
 ### Project Overview
 
@@ -28,7 +28,7 @@ In **Lab 1**, I developed a simple **Blink Example** application using the ESP-I
 - Blinks an LED connected to GPIO 6
 - Built with **CMake** for managing the build process
 
-**[See Lab 1 Details](lab_1/README.md)**
+**[See Lab 1 Details](lab-01-blink-hw-tools/README.md)**
 
 ---
 
@@ -44,11 +44,11 @@ In **Lab 2**, I created a **Traffic Light System** that manages the states of a 
 - Handles **day and night periods** with different behaviors
 - Built with **CMake** for managing the build process
 
-**[See Lab 2 Details](lab_2/README.md)**
+**[See Lab 2 Details](lab-02-traffic-light/README.md)**
 
 ---
 
-## Lab 3: FreeRTOS Multitasking Example
+## Lab 3: FreeRTOS Multitasking
 
 ### Project Overview
 
@@ -60,7 +60,7 @@ In **Lab 3**, I developed a **FreeRTOS Multitasking Example** that demonstrates 
 - Demonstrates multitasking and task scheduling in FreeRTOS
 - Built with **CMake** for managing the build process
 
-**[See Lab 3 Details](lab_3/README.md)**
+**[See Lab 3 Details](lab-03-freertos-multitasking/README.md)**
 
 ---
 
@@ -90,21 +90,21 @@ In **Lab 3**, I developed a **FreeRTOS Multitasking Example** that demonstrates 
 3. Build the blink example:
 
    ```sh
-   cd lab_1/blink
+   cd lab-01-blink-hw-tools
    idf.py build
    ```
 
 4. Build the traffic light system:
 
    ```sh
-   cd lab_2/traffic-light-system
+   cd lab-02-traffic-light
    idf.py build
    ```
 
 5. Build the FreeRTOS multitasking example:
 
    ```sh
-   cd lab_3/freertos_blink
+   cd lab-03-freertos-multitasking
    idf.py build
    ```
 

@@ -1,4 +1,4 @@
-# Lab 1: Blink Example
+# Lab 1: Blink + Hardware Tools
 
 This lab demonstrates a simple example of blinking an LED using the ESP-IDF framework.
 

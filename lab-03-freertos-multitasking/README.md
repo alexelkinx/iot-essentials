@@ -1,4 +1,4 @@
-# Lab 3: FreeRTOS Multitasking Example
+# Lab 3: FreeRTOS Multitasking
 
 ## Project Overview
 
