@@ -15,6 +15,7 @@ The course includes several labs that involve the development of:
 - [Lab 1: Blink + Hardware Tools](#lab-1-blink--hardware-tools)
 - [Lab 2: Traffic Light System](#lab-2-traffic-light-system)
 - [Lab 3: FreeRTOS Multitasking](#lab-3-freertos-multitasking)
+- [Lab 4: ISR Latency and RMT Interrupts](#lab-4-isr-latency-and-rmt-interrupts)
 - [Building the Projects](#building-the-projects)
 
 ## Lab 1: Blink + Hardware Tools
@@ -64,6 +65,24 @@ In **Lab 3**, I developed a **FreeRTOS Multitasking Example** that demonstrates 
 
 ---
 
+## Lab 4: ISR Latency and RMT Interrupts
+
+### Project Overview
+
+In **Lab 4**, I explored GPIO interrupt latency and task-level responsiveness using the ESP32 and FreeRTOS. This lab involved measuring ISR and task latencies under different scenarios, including context switching and asynchronous interrupt triggering with the RMT peripheral.
+
+### Key Features:
+
+- Measures latency from GPIO input event to ISR and task handler
+- Implements context switching optimization in ISR
+- Analyzes code-synchronous vs. asynchronous interrupt behavior
+- Uses RMT peripheral to generate asynchronous GPIO signals
+- Built with **CMake** for managing the build process
+
+**[See Lab 4 Details](lab-04-isr-latency-rmt/README.md)**
+
+---
+
 ## Building the Projects
 
 ### Prerequisites
@@ -105,6 +124,13 @@ In **Lab 3**, I developed a **FreeRTOS Multitasking Example** that demonstrates 
 
    ```sh
    cd lab-03-freertos-multitasking
+   idf.py build
+   ```
+
+6. Build the ISR latency and RMT interrupt example:
+
+   ```sh
+   cd lab-04-isr-latency-rmt
    idf.py build
    ```
 

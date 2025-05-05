@@ -1,0 +1,24 @@
+Latencies when ISR is triggered synchronously from main_app, initial version:
+Interrupt latency = 2.75 us
+Task latency = 148 us
+
+Latencies when ISR is triggered synchronously from main_app, version with ctx switch at ISR return:
+Interrupt latency = 2.75 us
+Task latency = 87 us
+
+Task List:
+Task Name       Status  Prio    Stack   Task#
+main            X       1       2288    2
+IDLE            R       0       1364    3
+doWorkTask      B       9       1812    5
+gpio_task_examp B       4       1748    4
+esp_timer       S       22      3860    1
+
+Status: X: Suspended
+	R: Running
+	B: Blocked
+	S: Suspended
+
+Latencies when ISR is triggered from RMT device:
+Interrupt latency = 2.80 us
+Task latency = 185 us
