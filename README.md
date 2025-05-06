@@ -10,6 +10,7 @@ The course includes several labs that involve the development of:
 2. A **Traffic Light System** that simulates traffic light operations with various states and timing sequences.
 3. A **FreeRTOS Multitasking project** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies.
 4. An **ISR Latency and RMT Interrupts lab** that measures GPIO interrupt latency and explores task responsiveness using synchronous and asynchronous interrupt triggering with the RMT peripheral.
+5. A **BLE Servo Control project** that integrates a servo motor with a Bluetooth Low Energy GATT server for remote angle control.
 
 ## Table of Contents
 
@@ -17,6 +18,7 @@ The course includes several labs that involve the development of:
 - [Lab 2: Traffic Light System](#lab-2-traffic-light-system)
 - [Lab 3: FreeRTOS Multitasking](#lab-3-freertos-multitasking)
 - [Lab 4: ISR Latency and RMT Interrupts](#lab-4-isr-latency-and-rmt-interrupts)
+- [Lab 5: BLE Servo Control](#lab-5-ble-servo-control)
 - [Building the Projects](#building-the-projects)
 
 ## Lab 1: Blink + Hardware Tools
@@ -81,6 +83,23 @@ In **Lab 4**, I explored GPIO interrupt latency and task-level responsiveness us
 - Built with **CMake** for managing the build process
 
 **[See Lab 4 Details](lab-04-isr-latency-rmt/README.md)**
+
+---
+
+## Lab 5: BLE Servo Control
+
+### Project Overview
+
+In **Lab 5**, I implemented a **BLE-controlled servo motor system** using the ESP32 and ESP-IDF. The lab involved controlling a servo motor over Bluetooth by integrating FreeRTOS multitasking, PWM with MCPWM, and a GATT server BLE application.
+
+### Key Features:
+
+- Controls servo motor angle via BLE characteristic write
+- Refactors PWM functionality into a reusable `servo.c` module
+- Uses FreeRTOS queue to communicate between BLE callback and main task
+- Built with **CMake** and ESP-IDF
+
+**[See Lab 5 Details](lab-05-ble-servo-control/README.md)**
 
 ---
 
