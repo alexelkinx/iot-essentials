@@ -1,16 +1,11 @@
+# Build output
 build/
-sdkconfig.defaults*
-sdkconfig.old
-.vscode/
-managed_components/
-pytest*
-dependencies*
-esp_idf_*
-.devcontainer/
 
-# Build files
-build/
-sdkconfig*
+# SDK configuration backups
+sdkconfig.old
+sdkconfig.defaults*
+
+# Managed components
 managed_components/
 dependencies*/
 esp_idf_*/
@@ -19,12 +14,12 @@ esp_idf_*/
 .vscode/
 .devcontainer/
 
-# Python cache & tests
-pytest*
+# Python cache & test files
 __pycache__/
 *.py[cod]
 *.pytest_cache/
+pytest*
 
-# Misc
+# System files
 .DS_Store
 Thumbs.db
