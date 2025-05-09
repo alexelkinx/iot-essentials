@@ -11,6 +11,7 @@ The course includes several labs that involve the development of:
 3. A **FreeRTOS Multitasking project** that demonstrates multitasking with FreeRTOS by blinking multiple LEDs at different frequencies.
 4. An **ISR Latency and RMT Interrupts lab** that measures GPIO interrupt latency and explores task responsiveness using synchronous and asynchronous interrupt triggering with the RMT peripheral.
 5. A **BLE Servo Control project** that integrates a servo motor with a Bluetooth Low Energy GATT server for remote angle control.
+6. An **MQTT Servo and Blink Control project** that demonstrates remote control of a servo motor and LED blink rate via MQTT topics.
 
 ## Table of Contents
 
@@ -19,6 +20,7 @@ The course includes several labs that involve the development of:
 - [Lab 3: FreeRTOS Multitasking](#lab-3-freertos-multitasking)
 - [Lab 4: ISR Latency and RMT Interrupts](#lab-4-isr-latency-and-rmt-interrupts)
 - [Lab 5: BLE Servo Control](#lab-5-ble-servo-control)
+- [Lab 6: MQTT Servo and Blink Control](#lab-6-mqtt-servo-and-blink-control)
 - [Building the Projects](#building-the-projects)
 
 ## Lab 1: Blink + Hardware Tools
@@ -90,18 +92,37 @@ In **Lab 4**, I explored GPIO interrupt latency and task-level responsiveness us
 
 ### Project Overview
 
-In **Lab 5**, I implemented a **BLE-controlled servo motor system** using the ESP32 and ESP-IDF. The lab involved controlling a servo motor over Bluetooth by integrating FreeRTOS multitasking, PWM with MCPWM, and a GATT server BLE application.
+In **Lab 5**, I developed a **BLE-controlled servo motor system** using the ESP32 and ESP-IDF. The lab is split into two separate projects:
+
+- A standalone MCPWM example that continuously sweeps the servo angle
+- A BLE GATT server that receives angle values via characteristic write and updates the servo in real time
 
 ### Key Features:
 
-- Controls servo motor angle via BLE characteristic write
-- Refactors PWM functionality into a reusable `servo.c` module
-- Uses FreeRTOS queue to communicate between BLE callback and main task
+- BLE-based servo control using characteristic write
+- Uses FreeRTOS queue to transfer angle values from BLE handler to the servo task
+- Separate MCPWM project demonstrates continuous angle sweeping from -90° to +90°
 - Built with **CMake** and ESP-IDF
 
 **[See Lab 5 Details](lab-05-ble-servo-control/README.md)**
 
 ---
+
+## Lab 6: MQTT Servo and Blink Control
+
+### Project Overview
+
+In **Lab 6**, I implemented an **MQTT-controlled system** to manage a servo motor and an LED blink rate using the ESP32 and ESP-IDF. This lab extends the servo functionality from Lab 5 and integrates Wi-Fi and MQTT communication for remote control.
+
+### Key Features:
+
+- Subscribes to two MQTT topics: one for LED blink rate and one for servo angle
+- Uses FreeRTOS queues to decouple MQTT event handling from task logic
+- Servo control is built on a reusable `servo.c` module from Lab 5
+- Blink task uses timeout logic to toggle LED if no updates are received
+- Built with **CMake** and ESP-IDF
+
+**[See Lab 6 Details](lab-06-mqtt-servo-blink/README.md)**
 
 ## Building the Projects
 
